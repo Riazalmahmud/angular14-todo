@@ -3,35 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './navbar/navbar.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { TodoComponent } from './todo/todo.component';
-import { MatCardModule } from '@angular/material/card';
-import { DragDropModule } from '@angular/cdk/drag-drop';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatButtonModule } from '@angular/material/button';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { ContactManagerComponent } from './component/contact-manager/contact-manager.component';
+import { AddContactComponent } from './component/add-contact/add-contact.component';
+import { EditContactComponent } from './component/edit-contact/edit-contact.component';
+import { ViewContactComponent } from './component/view-contact/view-contact.component';
+import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, TodoComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    ContactManagerComponent,
+    AddContactComponent,
+    EditContactComponent,
+    ViewContactComponent,
+    PageNotFoundComponent
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatCardModule,
-    DragDropModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    ReactiveFormsModule,
-    FormsModule,
-    MatInputModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
