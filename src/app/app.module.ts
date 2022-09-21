@@ -9,7 +9,9 @@ import { AddContactComponent } from './component/add-contact/add-contact.compone
 import { EditContactComponent } from './component/edit-contact/edit-contact.component';
 import { ViewContactComponent } from './component/view-contact/view-contact.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { SpninerComponent } from './component/spniner/spniner.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +20,11 @@ import { PageNotFoundComponent } from './component/page-not-found/page-not-found
     AddContactComponent,
     EditContactComponent,
     ViewContactComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SpninerComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

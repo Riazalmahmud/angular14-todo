@@ -4,7 +4,7 @@ export interface IContact {
   email: string;
   photo: string;
   mobile: string;
-  contact: string;
+  company: string;
   title: string;
   groupId: string;
 }

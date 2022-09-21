@@ -7,13 +7,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   redirectTo: 'contacts/admin',
+  //   pathMatch: 'full',
+  // },
   {
     path: '',
-    redirectTo: '/contacts/admin',
-    pathMatch: 'full',
-  },
-  {
-    path: 'contacts/admin',
     component: ContactManagerComponent,
   },
   {
@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'contacts/edit/:contactId',
     component: EditContactComponent,
+  },
+  {
+    path: 'contacts/view/:contactId',
+    component: ViewContactComponent,
   },
   {
     path: '**',
